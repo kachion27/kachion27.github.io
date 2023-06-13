@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Video To Text ASCII (Kachion AI)</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="VideoToText.css"> 
+
+    <link rel="icon" href="./LOGO_KHKT-removebg-preview2.png">
+</head>
+<body>
+    <header>
+        <a href="./home-65732544546732.html"><img class="logo" src="./Screenshot_20230423_075154-removebg-.png" alt="nteam kachion logo"> 
+        <div class="navigation">
+            <!-- <a href="#">admin</a>
+            <a href="#">về hệ thống</a> -->
+            <a href="./index.html">Đăng xuất</a>
+        </div>
+    </header>
+    <div class="box">
+        <div id="container">
+            <div id="state0">
+                <div class="nav">
+                    <input class="input" name="chonfile" type="file"  id="file" >
+                </div>
+                <p id="p1"> KACHION AI <span></span></p>
+                <div id="video1" class="button1">
+                    <video  controls loop></video>
+                </div>
+                <div class="btn">
+                    <button id="play"  type="button" onclick="play()">xem</button>
+                </div>
+            </div>
+        </div>
+        <div id="stage"></div>
+    </div>
+</body>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+    #textcc{
+    text-align: center
+    }
+
+    h2{
+    text-align: center;
+    }
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    }
+
+    #video_background {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1000;
+        overflow: hidden;
+        }
+
+    body {
+        margin-top: 50px;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: #131111bd;
+    }
+
+    .logo{
+    width: 35%;
+    height: 25%;
+
+    }
+
+    .navigation a{
+    position: relative;
+    font-size: 0.9em;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+
+    }
+
+    .navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+    }
+
+    .navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+    }
+
+</style>
+<script src="VideoToText.js"></script>
+</html>
