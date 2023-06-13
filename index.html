@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
-    <title>Sign in</title>
+    <title>Sign up</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./LOGO_KHKT-removebg-preview2.png">
 </head>
@@ -13,7 +13,7 @@
         <source src="./4K Beautiful Anime Scenery.webm" type="video/webm"/>
     </video>
     <header>
-        <a href="./index.html"><img class="logo" src="./Screenshot_20230423_075154-removebg-.png"> 
+        <a href="./signup.html"><img class="logo" src="./Screenshot_20230423_075154-removebg-.png"> 
         <div class="navigation">
             <a href="./oops.html">Về dự án</a>
             <a href="https://zalo.me/0983798171">hỗ trợ (zalo)</a>
@@ -23,23 +23,15 @@
 
 
     <div class="form" onsubmit="sign_in()">
-        <h2>Đăng Nhập Hệ Thống</h2>
+        <h2>Tạo Tài Khoản</h2>
         <form action="">
             <div class="input-field">
                 <input style="color: aliceblue;" type="text" placeholder="Tên đăng nhập" id="username" required />
                 <i class="far fa-user-circle"></i>
             </div>
             <div class="input-field">
-                <input style="color: aliceblue;" type="password" placeholder="mật khẩu" id="password" required />
-                <i class="uil uil-lock icon"></i>
-                <i class="fa-regular fa-eye-slash showHidePassword"></i>
-            </div>
-            <div class="checkbox-text">
-                <div class="checkbox-content">
-                    <input type="checkbox" />
-                    <label for="logCheck"><b>Lưu mật khẩu</b></label>
-                </div>
-                <a href="./oops.html" class="form-link"><b>Quên mật khẩu?</b></a>
+                <input style="color: aliceblue;" type="text" placeholder="Mật khẩu" id="password" required />
+                <i class="far fa-user-circle"></i>
             </div>
             <div class="input-field button">
                 <button type="submit"><b>Đăng nhập</b></button>
@@ -53,9 +45,9 @@
         </form>
         
     </div>
-    <audio autoplay loop>
+    <!-- <audio autoplay loop>
         <source src="./audio1.mp3">
-    </audio>
+    </audio> -->
 </body>
 <script src="./index.js"></script>
 </html>
