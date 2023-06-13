@@ -24,7 +24,7 @@ function sign_in (e){
     }
     else if(username == data.username && password == data.password){
         alert("Đăng nhập thành công!")    
-        window.location.href="home.html"
+        window.location.href="VTT.html"
     }
     else{
         alert("Đăng nhập thất bại!")
