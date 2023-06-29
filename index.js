@@ -13,6 +13,7 @@ function sign_up (e){
     alert("đăng kí thành công , vui lòng đăng nhập")
     window.location.href="index.html"
 }
+
 function sign_in (e){
     event.preventDefault();
     var username = document.getElementById("username").value;

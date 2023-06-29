@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
-    <title>Video To Text ASCII (Kachion AI)</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="VideoToText.css"> 
 
@@ -124,5 +123,18 @@
     }
 
 </style>
+<script>
+    setInterval(() => {
+        flashTitle("Kachion" , "Video To Text ASCII (Kachion AI)")
+    },1500);
+    
+    function flashTitle(pageTitle, newTitle) {
+        if (document.title == pageTitle) {
+            document.title = newTitle;
+        } else {
+            document.title = pageTitle;
+        }
+    }    
+</script>
 <script src="VideoToText.js"></script>
 </html>

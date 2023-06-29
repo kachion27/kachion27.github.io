@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
-    <title>Sign up</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./LOGO_KHKT-removebg-preview2.png">
 </head>
@@ -54,5 +53,18 @@
         <source src="./audio1.mp3">
     </audio> -->
 </body>
+<script>
+    setInterval(() => {
+        flashTitle("Kachion" , "Sign up")
+    },1500);
+    
+    function flashTitle(pageTitle, newTitle) {
+        if (document.title == pageTitle) {
+            document.title = newTitle;
+        } else {
+            document.title = pageTitle;
+        }
+    }    
+</script>
 <script src="./index.js"></script>
 </html>

@@ -33,5 +33,18 @@
         padding: 50px 20px;
     }
 </style>
+<script>
+    setInterval(() => {
+        flashTitle("Kachion" , "Feedback")
+    },1500);
+    
+    function flashTitle(pageTitle, newTitle) {
+        if (document.title == pageTitle) {
+            document.title = newTitle;
+        } else {
+            document.title = pageTitle;
+        }
+    }    
+</script>
 
 </html>
