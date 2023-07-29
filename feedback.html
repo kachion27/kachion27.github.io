@@ -8,23 +8,28 @@
     <title>Feedback - KACHION</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./LOGO_KHKT-removebg-preview2.png">
+    <link rel="stylesheet" href="./loading.css">
+
 </head>
 
-<body>
-    <header>
-        <a href="./index.html"><img class="logo" src="./Screenshot_20230423_075154-removebg-.png"
-                alt="nteam kachion logo">
-            <div class="navigation">
-                <a href="./feedback.html">feedback</a>
-                <a href="https://zalo.me/0983798171">hỗ trợ (zalo)</a>
-                <a href="https://www.facebook.com/nteam070327IT/">Fb Như Đăng</a>
-            </div>
-    </header>
-    <!-- <div id="ggf"> -->
-        <iframe width="700px" height="500px" src="https://forms.office.com/r/YhrhqTEpkB?embed=true" frameborder="0"
-            marginwidth="0" marginheight="0" style="border: none; border-radius: 25px; max-width:100%; max-height:100vh" allowfullscreen
-            webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-    <!-- </div> -->
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <header>
+            <a href="./index.html"><img class="logo" src="./Screenshot_20230423_075154-removebg-.png"
+                    alt="nteam kachion logo">
+                <div class="navigation">
+                    <a href="./feedback.html">feedback</a>
+                    <a href="https://zalo.me/0983798171">hỗ trợ (zalo)</a>
+                    <a href="https://www.facebook.com/nteam070327IT/">Fb Như Đăng</a>
+                </div>
+        </header>
+        <!-- <div id="ggf"> -->
+            <iframe width="1000px" height="700px" src="https://forms.office.com/r/YhrhqTEpkB?embed=true" frameborder="0"
+                marginwidth="0" marginheight="0" style="border: none; border-radius: 35px; max-width:100%; max-height:100vh" allowfullscreen
+                webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+        <!-- </div> -->
+    </div>
 </body>
 <style>
     #ggf {
@@ -33,7 +38,10 @@
         padding: 50px 20px;
     }
 </style>
+<script src="./loading.js"></script>
+
 <script>
+    
     setInterval(() => {
         flashTitle("Kachion", "Feedback")
     }, 1500);
